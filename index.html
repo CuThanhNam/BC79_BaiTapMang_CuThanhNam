@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Mảng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="container py-3 form-group">
+    <input type="text" id="numbers" class="form-group" placeholder="Nhập số n">
+    <button onclick="getArray()" class="btn btn-success">Thêm vào mảng</button>
+    <h4>Mảng:</h4>
+    <div class=" mt-2 alert-success w-25 ">
+        =><span id="result-numbers"></span>
+    </div>
+    <h4>Bài 1: Tổng số dương:</h4>
+    <button onclick="sumPositive()" class="btn btn-success">Tính Tổng</button>
+    <div class=" mt-2 alert-success w-25 ">
+        =><span id="result-sum-positive"></span>
+    </div>
+    <h4>Bài 2: Đếm số dương:</h4>
+    <button onclick="countPositive()" class="btn btn-success">Đếm số</button>
+    <div class=" mt-2 alert-success w-25 ">
+        =><span id="result-count-positive"></span>
+    </div>
+    <h4>Bài 3: Tìm số nhỏ nhất:</h4>
+    <button onclick="min()" class="btn btn-success">Tìm số nhỏ nhất</button>
+    <div class=" mt-2 alert-success w-25 ">
+        =><span id="result-min"></span>
+    </div>
+    <h4>Bài 4: Tìm số dương nhỏ nhất:</h4>
+    <button onclick="findSmallestPositiveNumber()" class="btn btn-success">Tìm số dương nhỏ nhất</button>
+    <div class=" mt-2 alert-success w-25 ">
+        =><span id="soDuongNhoNhat"></span>
+    </div>
+    <h4>Bài 5: Tìm số chẵn cuối cùng:</h4>
+    <button onclick="findLastEvenNumber()" class="btn btn-success">Tìm số chẵn cuối cùng</button>
+    <div class=" mt-2 alert-success w-25 ">
+       =><span id="soChanCuoiCung"></span>
+    </div>
+    <h4>Bài 6: Đổi chỗ:</h4>
+    <input type="text" id="index1" placeholder="Nhập vào vị trí 1">
+    <input type="text" id="index2" placeholder="Nhập vào vị trí 2">
+    <button onclick="swapArrayPositions()" class=" btn btn-success ">Đổi chỗ</button>
+    <div class=" mt-2 alert-success w-25 ">
+        =><span id="doiCho"></span>
+    </div>
+    <h4>Bài 7: Sắp xếp tăng dần:</h4>
+    <button onclick="soTangDan()" class="btn btn-success">Sắp xếp tăng dần</button>
+    <div class=" mt-2 alert-success w-25 ">
+        =><span id="sapXepTangDan"></span>
+    </div>
+    <h4>Bài 8: Tìm số nguyên đầu tiên:</h4>
+    <button onclick="findFirstPrimeNumber()" class="btn btn-success">Tìm số nguyên tố đầu tiên</button>
+    <div class=" mt-2 alert-success w-25 ">
+        =><span id="soNguyenDauTien"></span>
+    </div>
+    <h4>Bài 9: Đếm số nguyên:</h4>
+    <h4>Mảng:</h4>
+    <input type="text" id="realnumbers" placeholder="Nhập số">
+    <button onclick="getArray2()" class="btn btn-success">Thêm vào mảng</button>
+    <div class=" mt-2 alert-success w-25 ">
+        Mảng: <span id="real-numbers"></span>
+    </div>
+    <button onclick="countIntegers()" class="btn btn-success">Đếm số nguyên</button>
+    <div class=" mt-2 alert-success w-25 ">
+        =><span id="demSoNguyen"></span>
+    </div>
+    <h4>Bài 10: So sánh số âm và số dương:</h4>
+    <button onclick="comparePositiveAndNegative()" class="btn btn-success">So sánh số lượng số âm và dương</button>
+    <div class=" mt-2 alert-success w-25 ">
+        =><span id="soSanhAmVaDuong"></span>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
